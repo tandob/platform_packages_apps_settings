@@ -37,4 +37,8 @@
     <!-- LayersManager -->
     <string name="bitsyko_layers">Layers Manager</string>
 
+    <!-- About phone screen, build date -->
+    <string name="build_date">Build date</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+
 </resources>
