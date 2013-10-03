@@ -48,6 +48,13 @@
                     android:targetClass="com.lovejoy777.rroandlayersmanager.menu" />
         </PreferenceScreen>
 
+        <!-- LCD Density -->
+        <ListPreference
+                android:key="lcd_density"
+                android:icon="@drawable/ic_tentacles_density"
+                android:title="@string/lcd_density"
+                android:persistent="false" />
+
         <!-- SuperSU -->
         <PreferenceScreen
                 android:id="@+id/supersu_settings"
