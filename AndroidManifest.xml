@@ -1980,6 +1980,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.oct.tentacles.fragments.PerformanceFragment"
+            android:label="@string/performance_control_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.oct.tentacles.SHORTCUT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="com.oct.tentacles.fragments.sb.SbSettings"
             android:label="@string/status_bar_title" >
             <intent-filter>
