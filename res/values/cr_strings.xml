@@ -422,9 +422,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="phone_service_state">Voice: <xliff:g id="voice_state">%1$s</xliff:g>, data: <xliff:g id="data_state">%2$s</xliff:g></string>
 
     <!-- Tentacles Settings  -->
-    <!-- Settings main menu category heading. Interface (Launcher, Themes, System). [CHAR LIMIT=40] -->
-    <string name="header_category_tentacles">Personalization</string>
-
     <string name="oct_tentacles_title">Tentacles</string>
 
     <!-- Themes Settings -->
