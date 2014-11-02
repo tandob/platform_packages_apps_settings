@@ -587,11 +587,11 @@ public class Status extends PreferenceActivity {
         return Build.SERIAL;
     }
 
-    private String getSarValues() {
-        String headLevel = String.format(getResources().getString(R.string.maximum_head_level,
-                getResources().getString(R.string.sar_head_level)));
-        String bodyLevel = String.format(getResources().getString(R.string.maximum_body_level,
-                getResources().getString(R.string.sar_body_level)));
+    public static String getSarValues(Resources res) {
+        String headLevel = String.format(res.getString(R.string.maximum_head_level,
+                res.getString(R.string.sar_head_level)));
+        String bodyLevel = String.format(res.getString(R.string.maximum_body_level,
+                res.getString(R.string.sar_body_level)));
         return headLevel + "\n" + bodyLevel;
     }
 }
