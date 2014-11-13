@@ -20,7 +20,6 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import com.android.settings.DisplaySettings;
 import com.android.settings.R;
 import com.android.settings.location.LocationSettings;
 import com.oct.tentacles.fragments.VibratorIntensity;
@@ -31,7 +30,6 @@ public class BootReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context ctx, Intent intent) {
-        DisplaySettings.restore(ctx);
         LocationSettings.restore(ctx);
         VibratorIntensity.restore(ctx);
     }
