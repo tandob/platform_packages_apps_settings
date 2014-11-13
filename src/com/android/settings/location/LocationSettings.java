@@ -208,7 +208,6 @@ public class LocationSettings extends LocationSettingsBase
                     Log.d(TAG, "Received settings change intent: " + intent);
                 }
                 injector.reloadStatusMessages();
-                refreshLocationMode();
             }
         };
 
