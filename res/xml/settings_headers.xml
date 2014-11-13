@@ -36,16 +36,6 @@
         android:title="@string/bluetooth_settings_title"
         android:icon="@drawable/ic_settings_bluetooth2" />
 
-    <!-- Mobile networks -->
-    <header
-        android:id="@+id/mobile_network_settings"
-        android:icon="@drawable/ic_settings_mobilenetworks"
-        android:title="@string/network_settings_title"
-        android:dependency="toggle_airplane">
-        <intent
-            android:action="android.settings.DATA_ROAMING_SETTINGS" />
-    </header>
-
     <!-- Data Usage -->
     <header
         android:id="@+id/data_usage_settings"
@@ -58,17 +48,6 @@
         android:fragment="com.android.settings.WirelessSettings"
         android:id="@+id/operator_settings">
         <intent android:action="com.android.settings.OPERATOR_APPLICATION_SETTING" />
-    </header>
-
-    <!-- Multi Sim Settings - this is in the settings process -->
-    <header
-        android:id="@+id/multi_sim_settings"
-        android:icon="@drawable/ic_settings_sim"
-        android:title="@string/multi_sim_settings_title">
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetPackage="com.android.settings"
-            android:targetClass="com.android.settings.MultiSimSettings" />
     </header>
 
     <!-- Other wireless and network controls -->
@@ -172,9 +151,6 @@
         android:title="@string/language_settings" />
 
     <!-- Backup and reset -->
-    <!-- Google for some reason calls this class PrivacySettings even though it is "Backup & reset"
-         we are leaving it as-is in order to not complicate future merges but rather adding a new
-         PrivacySettings class under .cyanogenmod above to handle the 'real' privacy items -->
     <header
         android:fragment="com.android.settings.PrivacySettings"
         android:icon="@drawable/ic_settings_backup"
