@@ -281,4 +281,8 @@
     <string name="weather_hide_panel_never_summary">The weather panel won\`t be hidden</string>
     <string name="weather_number_of_notifications_title">Number of notifications</string>
 
+    <!-- Notification counters -->
+    <string name="status_bar_notif_count_title">Show notification count</string>
+    <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+
 </resources>
