@@ -57,7 +57,7 @@
     <string name="power_menu_voice_assist_title">Voice Assist</string>
     <string name="power_menu_assist_title">Assist</string>
 
-         <!-- Advanced reboot options -->
+    <!-- Advanced reboot options -->
     <string name="advanced_reboot_title">Advanced reboot</string>
     <string name="advanced_reboot_summary">When unlocked, include options in the power menu for rebooting into recovery, bootloader or performing a soft reboot</string>
 
@@ -217,5 +217,9 @@
     <!-- Double tap-to-sleep -->
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
     <string name="double_tap_to_sleep_summary">Double-tap on the status bar or top third and bottom shortcut area of the lock screen to turn off the display</string>
+
+    <!-- Statusbar weather-->
+    <string name="status_bar_show_weather_title">Show weather</string>
+    <string name="status_bar_show_weather_summary">Show the weather above the Quick Settings panel</string>
 
 </resources>
