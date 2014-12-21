@@ -30,6 +30,13 @@
                     android:targetClass="com.about.octos.aboutoctos.AboutOctOs" />
         </PreferenceScreen>
 
+        <!-- Circle app bar -->
+        <PreferenceScreen
+               android:key="app_circle_bar"
+               android:fragment="com.android.settings.octos.AppCircleBar"
+               android:title="@string/app_circle_bar_title"
+               android:icon="@drawable/ic_settings_app_circle" />
+
         <!-- Buttons -->
         <PreferenceScreen
                 android:id="@+id/button_settings"
