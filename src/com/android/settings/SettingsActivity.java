@@ -222,6 +222,8 @@ public class SettingsActivity extends Activity
             R.id.wifi_settings,
             R.id.bluetooth_settings,
             R.id.data_usage_settings,
+            R.id.device_personalization,
+            R.id.octos_settings,
             R.id.sim_settings,
             R.id.wireless_settings,
             R.id.device_section,

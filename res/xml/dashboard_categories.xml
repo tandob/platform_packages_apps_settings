@@ -84,14 +84,13 @@
                 android:icon="@drawable/ic_settings_home"
                 />
 
-        <!-- Status bar -->
+        <!-- Interface -->
         <dashboard-tile
-                android:id="@+id/status_bar_settings"
-                android:title="@string/status_bar_title"
-                android:fragment="com.android.settings.cyanogenmod.StatusBarSettings"
-                android:icon="@drawable/ic_settings_home"
+                android:id="@+id/octos_settings"
+                android:icon="@drawable/ic_octos_settings"
+                android:fragment="com.android.settings.octos.OctosSettings"
+                android:title="@string/octos_settings_title"
                 />
-
 
     </dashboard-category>
 
