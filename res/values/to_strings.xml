@@ -15,5 +15,32 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
     <string name="octos_settings_title">Tentacles</string>
+
+    <!-- About -->
+    <string name="devs">The Crew</string>
+    <string name="octos" translatable="false">Team-OctOS</string>
+    <string name="octos_website_title">Team-OctOS website</string>
+    <string name="octos_website_summary">www.teamoctos.com - Find all newest releases here</string>
+    <string name="octos_review_title">Team-OctOS Code Review - Gerrit</string>
+    <string name="octos_review_summary">View Tean-OctOS\'s Gerrit instance</string>
+    <string name="octos_irc_title">Join us on IRC</string>
+    <string name="octos_irc_summary"></string>
+    <string name="about_octos">About Team-Octos</string>
+    <string name="about_octos_summary">@null</string>
+    <string name="donate_octos" translatable="false">    </string>
+    <string name="github_octos" translatable="false">https://github.com/Team-OctOS</string>
+    <string name="github_hedwig34" translatable="false">https://github.com/hedwig34</string>
+    <string name="github_cjkacz" translatable="false">https://github.com/cjkacz</string>
+
+    <string name="url_octos" translatable="false">http://teamoctos.com/</string>
+    <string name="url_octos_gerrit" translatable="false">http://review.teamoctos.com:8080/</string>
+    <string name="url_octos_irc" translatable="false"></string>
+    <string name="team_octos_project" translatable="false">Team-OctOS</string>
+    <string name="team_octos_members">The Crew</string>
+    <!-- dynamic changelog -->
+    <string name="mgerrit_changelog_title">mGerrit: Dynamic ChangeLog</string>
+    <string name="mgerrit_changelog_summary">Interactive changelog pulled live from our Gerrit instance</string>
+
 </resources>

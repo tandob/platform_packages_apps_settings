@@ -224,6 +224,7 @@ public class SettingsActivity extends Activity
             R.id.data_usage_settings,
             R.id.device_personalization,
             R.id.octos_settings,
+            R.id.about_octos_settings,
             R.id.sim_settings,
             R.id.wireless_settings,
             R.id.device_section,

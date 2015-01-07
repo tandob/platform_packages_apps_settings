@@ -19,6 +19,14 @@
     android:title="@string/octos_settings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+        <!-- About -->
+        <PreferenceScreen
+                android:id="@+id/about_octos_settings"
+                android:title="@string/about_octos"
+                android:fragment="com.android.settings.octos.about.AboutTabHostFragment"
+                android:icon="@drawable/ic_tentacles_about"
+                />
+
         <!-- Status bar -->
         <PreferenceScreen
                 android:id="@+id/status_bar_settings"
