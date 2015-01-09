@@ -44,6 +44,10 @@
     <string name="github_octos" translatable="false">https://github.com/Team-OctOS</string>
     <string name="github_hedwig34" translatable="false">https://github.com/hedwig34</string>
     <string name="github_cjkacz" translatable="false">https://github.com/cjkacz</string>
+    <string name="github_cjkacz" translatable="false">https://github.com/Grommish</string>
+    <string name="github_cjkacz" translatable="false">https://github.com/hlxanthus</string>
+    <string name="github_cjkacz" translatable="false">https://github.com/bthorne79</string>
+    <string name="github_cjkacz" translatable="false">https://github.com/CJDubbsy</string>
 
     <string name="url_octos" translatable="false">http://teamoctos.com/</string>
     <string name="url_octos_gerrit" translatable="false">http://review.teamoctos.com:8080/</string>
