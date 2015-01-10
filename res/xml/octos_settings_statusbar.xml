@@ -7,6 +7,12 @@
         android:key="octos_status_bar_battery"
         android:title="@string/battery_title" >
 
+            <!-- Bettery Bar -->
+            <PreferenceScreen
+                android:key="battery_bar"
+                android:fragment="com.android.settings.octos.BatteryBar"
+                android:title="@string/battery_bar" />
+
             <ListPreference
                 android:key="status_bar_battery_style"
                 android:title="@string/status_bar_battery_style_title"
