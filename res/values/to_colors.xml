@@ -18,4 +18,12 @@
 
     <color name="theme_accent">#ff009688</color>
 
+    <!-- Color Picker -->
+    <color name="setting_separator">#ff484848</color>
+    <color name="extension_list_item_color">#ff999999</color>
+
+    <!-- DSLV colors -->
+    <color name="dslv_icon_dark">#ff009688</color>
+    <color name="dslv_float_cackground_color">#ffe1e1e0</color>
+
 </resources>
