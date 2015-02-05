@@ -31,6 +31,7 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.SystemProperties;
 import android.os.Vibrator;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
@@ -51,7 +52,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class OtherSoundSettings extends SettingsPreferenceFragment implements Indexable {
+public class OtherSoundSettings extends SettingsPreferenceFragment implements Indexable, Preference.OnPreferenceChangeListener {
     private static final String TAG = "OtherSoundSettings";
 
     private static final int DEFAULT_ON = 1;
@@ -74,6 +75,9 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_DOCK_AUDIO_MEDIA = "dock_audio_media";
     private static final String KEY_EMERGENCY_TONE = "emergency_tone";
     private static final String KEY_VIBRATION_INTENSITY = "vibration_intensity";
+    private static final String KEY_CAMERA_SOUNDS = "camera_sounds";
+
+    private static final String PROP_CAMERA_SOUND = "persist.sys.camera-sound";
 
     private static final String KEY_POWER_NOTIFICATIONS = "power_notifications";
     private static final String KEY_POWER_NOTIFICATIONS_VIBRATE = "power_notifications_vibrate";
@@ -254,6 +258,10 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
         for (SettingPref pref : PREFS) {
             pref.init(this);
         }
+
+        final SwitchPreference mCameraSounds = (SwitchPreference) findPreference(KEY_CAMERA_SOUNDS);
+        mCameraSounds.setChecked(SystemProperties.getBoolean(PROP_CAMERA_SOUND, true));
+        mCameraSounds.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -299,6 +307,17 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
     private static boolean hasHaptic(Context context) {
         final Vibrator vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
         return vibrator != null && vibrator.hasVibrator();
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object o) {
+        final String key = preference.getKey();
+        if (KEY_CAMERA_SOUNDS.equals(key)) {
+            final String value = ((Boolean) o) ? "1" : "0";
+            SystemProperties.set(PROP_CAMERA_SOUND, value);
+            return true;
+        }
+        return false;
     }
 
     // === Callbacks ===
