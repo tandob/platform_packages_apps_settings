@@ -55,6 +55,14 @@
             android:title="@string/vibrate_on_touch_title"
             android:persistent="false" />
 
+    <!-- Camera shutter sound -->
+    <SwitchPreference
+            android:key="camera_sounds"
+            android:title="@string/camera_sounds_title"
+            android:switchTextOff=""
+            android:switchTextOn=""
+            android:persistent="false" />
+
     <!-- Dock speaker plays -->
     <com.android.settings.DropDownPreference
             android:key="dock_audio_media"
