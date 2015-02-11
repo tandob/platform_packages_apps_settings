@@ -79,7 +79,7 @@ Android Open Source Project
         <!-- Interface -->
         <dashboard-tile
                 android:id="@+id/octos_settings"
-                android:icon="@drawable/ic_octos_settings"
+                android:icon="@drawable/ic_tentacles_about"
                 android:fragment="com.android.settings.octos.OctosSettings"
                 android:title="@string/octos_settings_title"
                 />
