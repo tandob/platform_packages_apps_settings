@@ -19,4 +19,5 @@
 <resources>
     <item type="id" name="preference_highlight_key" />
     <item type="id" name="voice_wakeup_settings" />
+    <item type="id" name="oclick" />
 </resources>
