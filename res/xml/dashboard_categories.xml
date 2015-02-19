@@ -98,34 +98,23 @@ Android Open Source Project
                 android:icon="@drawable/ic_settings_more"
                 />
 
-
     </dashboard-category>
 
     <!-- DEVICE -->
-    <dashboard-category
+<!--    <dashboard-category
             android:id="@+id/device_personalization"
             android:title="@string/header_category_personalization" >
-
+-->
         <!-- Interface -->
-        <dashboard-tile
+<!--        <dashboard-tile
                 android:id="@+id/octos_settings"
                 android:icon="@drawable/ic_tentacles_about"
                 android:fragment="com.android.settings.octos.OctosSettings"
                 android:title="@string/octos_settings_title"
                 />
+-->
 
-        <!-- Gestures -->
-        <dashboard-tile
-            android:id="@+id/device_specific_gesture_settings"
-            android:title="@string/gesture_settings_title"
-            android:icon="@drawable/ic_settings_gestures">
-            <intent
-                android:action="com.cyanogenmod.action.LAUNCH_TOUCHSCREEN_GESTURE_SETTINGS"
-                android:targetPackage="com.cyanogenmod.settings.device"
-                android:targetClass="com.cyanogenmod.settings.device.TouchscreenGestureSettings" />
-        </dashboard-tile>
-
-    </dashboard-category>
+<!--    </dashboard-category> -->
 
     <!-- DEVICE -->
     <dashboard-category
@@ -141,13 +130,13 @@ Android Open Source Project
                 />
 
         <!-- Sound -->
-	<dashboard-tile
-	        android:id="@+id/sound_settings"
-	        android:title="@string/category_sounds"
-	        android:fragment="com.android.settings.SoundSettings"
-	        android:icon="@drawable/ic_settings_notifications"
-	/>
-	
+        <dashboard-tile
+                android:id="@+id/sound_settings"
+                android:title="@string/category_sounds"
+                android:fragment="com.android.settings.SoundSettings"
+                android:icon="@drawable/ic_settings_notifications"
+                />
+
         <!-- Display & lights -->
         <dashboard-tile
                 android:id="@+id/display_and_lights_settings"
@@ -172,6 +161,17 @@ Android Open Source Project
                 android:fragment="com.android.settings.deviceinfo.Memory"
                 android:icon="@drawable/ic_settings_storage"
                 />
+
+        <!-- Gestures -->
+        <dashboard-tile
+            android:id="@+id/device_specific_gesture_settings"
+            android:title="@string/gesture_settings_title"
+            android:icon="@drawable/ic_settings_gestures">
+            <intent
+                android:action="com.cyanogenmod.action.LAUNCH_TOUCHSCREEN_GESTURE_SETTINGS"
+                android:targetPackage="com.cyanogenmod.settings.device"
+                android:targetClass="com.cyanogenmod.settings.device.TouchscreenGestureSettings" />
+        </dashboard-tile>
 
         <!-- Battery -->
         <dashboard-tile
