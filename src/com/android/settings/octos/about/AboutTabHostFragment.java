@@ -21,7 +21,7 @@ public class AboutTabHostFragment extends Fragment {
     private ViewPager mPager;
 
     private static final int[] mFragments = new int[] {
-            R.string.team_octos_project, R.string.team_octos_members
+            R.string.team_octos_project, R.string.team_octos_members, R.string.team_octos_supporters
     };
 
     @Override
@@ -68,6 +68,8 @@ public class AboutTabHostFragment extends Fragment {
                     return new AboutFragment();
                 case 1:
                     return new AboutCrewFragment();
+                case 2:
+                    return new AboutSupportersFragment();
             }
             return null;
         }
