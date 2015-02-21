@@ -25,8 +25,6 @@
     <string name="octos_website_summary">www.teamoctos.com - Find all newest releases here</string>
     <string name="octos_review_title">Team-OctOS Code Review - Gerrit</string>
     <string name="octos_review_summary">View Team-OctOS\'s Gerrit instance</string>
-    <string name="octos_irc_title">Join us on IRC</string>
-    <string name="octos_irc_summary"></string>
     <string name="about_octos">About Team-OctOS</string>
     <string name="about_octos_summary">@null</string>
     <string name="donate_octos" translatable="false">    </string>
@@ -40,7 +38,6 @@
 
     <string name="url_octos" translatable="false">http://teamoctos.com/</string>
     <string name="url_octos_gerrit" translatable="false">http://review.teamoctos.com:8080/</string>
-    <string name="url_octos_irc" translatable="false"></string>
     <string name="team_octos_project" translatable="false">Team-OctOS</string>
     <string name="team_octos_members">The Crew</string>
     <string name="team_octos_supporters">Supporters</string>

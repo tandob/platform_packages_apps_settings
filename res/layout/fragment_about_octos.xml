@@ -57,17 +57,6 @@
                 />
 
         <com.android.settings.octos.settings.UrlSetting
-                android:id="@+id/octos_irc"
-                android:title="@string/octos_irc_title"
-                android:summary="@string/octos_irc_summary"
-                octos:url="@string/url_octos_irc"
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone"
-                />
-
-        <com.android.settings.octos.settings.UrlSetting
                 android:id="@+id/octos_mgerrit_changelog"
                 android:title="@string/mgerrit_changelog_title"
                 android:summary="@string/mgerrit_changelog_summary"
