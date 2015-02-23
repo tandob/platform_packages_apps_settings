@@ -145,15 +145,6 @@ Android Open Source Project
                 android:icon="@drawable/ic_settings_display"
                 />
 
-        <!-- Notification manager -->
-        <dashboard-tile
-                android:id="@+id/notification_manager"
-                android:title="@string/notification_manager"
-                android:fragment="com.android.settings.notification.NotificationManagerSettings"
-                android:icon="@drawable/ic_settings_notifications"
-                />
-
-
         <!-- Storage -->
         <dashboard-tile
                 android:id="@+id/storage_settings"
