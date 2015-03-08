@@ -24,4 +24,11 @@
             android:summary="@string/toast_icon_summary"
             android:defaultValue="false" />
 
+        <!-- Wakelock blocker -->
+        <PreferenceScreen
+            android:key="wakelock_blocker"
+            android:fragment="com.android.settings.octos.WakeLockBlocker"
+            android:title="@string/wakelock_blocker_title"
+            android:summary="@string/wakelock_blocker_summary" />
+
 </PreferenceScreen>
