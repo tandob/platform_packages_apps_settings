@@ -109,6 +109,8 @@
 
     <!-- Disable Camera Shutter Sound -->
     <string name="camera_sounds_title">Camera shutter sound</string>
+    <string name="camera_sound_warning_dialog_text">Disabling the camera shutter sound is illegal in some areas! Please check the applicable law in your country</string>
+
 
     <!-- Circle app bar -->
     <string name="category_app_circle_bar_title">App launcher</string>
