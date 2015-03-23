@@ -21,6 +21,8 @@ import static com.android.settings.notification.SettingPref.TYPE_SYSTEM;
 
 import android.content.ContentResolver;
 import android.content.Context;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.database.ContentObserver;
 import android.media.AudioManager;
@@ -74,6 +76,8 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_CAMERA_SOUNDS = "camera_sounds";
 
     private static final String PROP_CAMERA_SOUND = "persist.sys.camera-sound";
+
+    private AlertDialog mAlertDialog;
 
     private static final SettingPref PREF_DIAL_PAD_TONES = new SettingPref(
             TYPE_SYSTEM, KEY_DIAL_PAD_TONES, System.DTMF_TONE_WHEN_DIALING, DEFAULT_ON) {
@@ -233,6 +237,21 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
         if (KEY_CAMERA_SOUNDS.equals(key)) {
             final String value = ((Boolean) o) ? "1" : "0";
             SystemProperties.set(PROP_CAMERA_SOUND, value);
+
+            /* Display camera shutter sound warning dialog */
+            mAlertDialog = new AlertDialog.Builder(getActivity()).create();
+            mAlertDialog.setTitle(R.string.camera_sounds_title);
+            mAlertDialog.setMessage(getResources().getString(R.string.camera_sound_warning_dialog_text));
+            mAlertDialog.setCancelable(false);
+            mAlertDialog.setButton(DialogInterface.BUTTON_POSITIVE,
+                    getResources().getString(com.android.internal.R.string.ok),
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                        }
+                    });
+            if (!SystemProperties.getBoolean(PROP_CAMERA_SOUND, true)) {
+                mAlertDialog.show();
+            };
             return true;
         }
         return false;
