@@ -20,8 +20,10 @@ import static com.android.settings.notification.SettingPref.TYPE_GLOBAL;
 import static com.android.settings.notification.SettingPref.TYPE_SYSTEM;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.database.ContentObserver;
@@ -86,6 +88,8 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
 
     // Used for power notification uri string if set to silent
     private static final String POWER_NOTIFICATIONS_SILENT_URI = "silent";
+
+    private AlertDialog mAlertDialog;
 
     private SwitchPreference mPowerSounds;
     private SwitchPreference mPowerSoundsVibrate;
@@ -289,6 +293,21 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
         if (KEY_CAMERA_SOUNDS.equals(key)) {
             final String value = ((Boolean) o) ? "1" : "0";
             SystemProperties.set(PROP_CAMERA_SOUND, value);
+
+            /* Display camera shutter sound warning dialog */
+            mAlertDialog = new AlertDialog.Builder(getActivity()).create();
+            mAlertDialog.setTitle(R.string.camera_sounds_title);
+            mAlertDialog.setMessage(getResources().getString(R.string.camera_sound_warning_dialog_text));
+            mAlertDialog.setCancelable(false);
+            mAlertDialog.setButton(DialogInterface.BUTTON_POSITIVE,
+                    getResources().getString(com.android.internal.R.string.ok),
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                        }
+                    });
+            if (!SystemProperties.getBoolean(PROP_CAMERA_SOUND, true)) {
+                mAlertDialog.show();
+            };
             return true;
         }
         return false;
