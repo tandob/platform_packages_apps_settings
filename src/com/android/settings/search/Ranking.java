@@ -47,6 +47,7 @@ import com.android.settings.voice.VoiceInputSettings;
 import com.android.settings.wifi.AdvancedWifiSettings;
 import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
+import com.android.settings.octos.OctosSettings;
 
 import java.util.HashMap;
 
@@ -60,8 +61,9 @@ public final class Ranking {
     public static final int RANK_SIM = 3;
     public static final int RANK_DATA_USAGE = 4;
     public static final int RANK_WIRELESS = 5;
-    public static final int RANK_HOME = 6;
-    public static final int RANK_DISPLAY = 7;
+    public static final int RANK_OCTOS = 6;
+    public static final int RANK_HOME = 7;
+    public static final int RANK_DISPLAY = 8;
     public static final int RANK_NOTIFICATIONS = 9;
     public static final int RANK_STORAGE = 10;
     public static final int RANK_POWER_USAGE = 11;
@@ -103,6 +105,9 @@ public final class Ranking {
 
         // Other wireless settinfs
         sRankMap.put(WirelessSettings.class.getName(), RANK_WIRELESS);
+
+        // OctOS
+        sRankMap.put(OctosSettings.class.getName(), RANK_OCTOS);
 
         // Home
         sRankMap.put(HomeSettings.class.getName(), RANK_HOME);
