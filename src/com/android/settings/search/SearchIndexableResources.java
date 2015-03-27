@@ -49,6 +49,7 @@ import com.android.settings.voice.VoiceInputSettings;
 import com.android.settings.wifi.AdvancedWifiSettings;
 import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
+import com.android.settings.octos.OctosSettings;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -116,6 +117,13 @@ public final class SearchIndexableResources {
                         NO_DATA_RES_ID,
                         WirelessSettings.class.getName(),
                         R.drawable.ic_settings_more));
+
+        sResMap.put(OctosSettings.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(OctosSettings.class.getName()),
+                        NO_DATA_RES_ID,
+                        OctosSettings.class.getName(),
+                        R.drawable.ic_tentacles_about));
 
         sResMap.put(HomeSettings.class.getName(),
                 new SearchIndexableResource(
