@@ -58,11 +58,11 @@
         </PreferenceScreen>
 
         <!-- Contributors cloud -->
-        <PreferenceScreen android:key="contributor_cloud"
+<!--        <PreferenceScreen android:key="contributor_cloud"
             android:title="@string/contributor_cloud_title"
             android:fragment="com.android.settings.cyanogenmod.ContributorsCloud" >
         </PreferenceScreen>
-
+-->
         <!-- Legal Information -->
         <PreferenceScreen
                 android:key="container"
@@ -88,12 +88,12 @@
             </PreferenceScreen>
 
             <!-- CM License information -->
-            <PreferenceScreen
+<!--            <PreferenceScreen
                     android:key="cmlicense"
                     android:title="@string/cmlicense_title">
                 <intent android:action="android.settings.CMLICENSE" />
             </PreferenceScreen>
-
+-->
             <!-- Terms and conditions -->
             <PreferenceScreen
                     android:key="terms"
