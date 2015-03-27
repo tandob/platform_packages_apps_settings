@@ -19,6 +19,17 @@
     android:title="@string/octos_settings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+        <!-- SuperSU -->
+        <PreferenceScreen
+                android:id="@+id/supersu_settings"
+                android:icon="@drawable/ic_settings_supersu"
+                android:title="@string/supersu_title">
+                <intent
+                    android:action="android.intent.action.MAIN"
+                    android:targetPackage="eu.chainfire.supersu"
+                    android:targetClass="eu.chainfire.supersu.MainActivity" />
+        </PreferenceScreen>
+
         <SwitchPreference
                    android:key="hide_tentacles_icon"
                    android:title="@string/hide_icon_title"
