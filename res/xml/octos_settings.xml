@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2013 Slimroms
+<!-- Copyright (C) 2015 Team OctOs
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -18,6 +18,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/octos_settings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+        <!-- SuperSU -->
+        <PreferenceScreen
+                android:id="@+id/supersu_settings"
+                android:icon="@drawable/ic_settings_supersu"
+                android:title="@string/supersu_title">
+                <intent
+                    android:action="android.intent.action.MAIN"
+                    android:targetPackage="eu.chainfire.supersu"
+                    android:targetClass="eu.chainfire.supersu.MainActivity" />
+        </PreferenceScreen>
 
         <SwitchPreference
                    android:key="hide_tentacles_icon"
