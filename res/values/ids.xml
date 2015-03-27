@@ -18,5 +18,6 @@
 -->
 <resources>
     <item type="id" name="preference_highlight_key" />
+    <item type="id" name="oclick" />
     <item type="id" name="octos_settings" />
 </resources>
