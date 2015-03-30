@@ -203,8 +203,6 @@
     <string name="color_enhancement_title">Color enhancement</string>
     <string name="color_enhancement_summary">Dynamically enhance the color of the display</string>
 
-    <string name="app_security_title">App security</string>
-
     <!-- Blacklist preferences -->
     <string name="blacklist_title">Blacklist</string>
     <string name="blacklist_edit_dialog_title">Edit blacklist entry</string>
@@ -836,6 +834,18 @@
     <string name="usb_media_format_gesture_explanation" product="default">You need to draw your unlock pattern to confirm that you want to erase the USB storage.</string>
     <string name="uicc_media_format_gesture_explanation" product="default">You need to draw your unlock pattern to confirm that you want to erase the UICC storage.</string>
 
+    <!-- Storage menu, label for internal media storage -->
+    <string name="internal_sd_format">Erase internal media storage</string>
+    <string name="internal_sd_format_summary">Erases all data on the internal media storage, such as music and photos</string>
+
+    <!-- Media & phone storage settings screen, label for check box to erase media storage [CHAR LIMIT=30] -->
+    <string name="master_clear_desc_erase_internal_storage">\n\nTo clear music, pictures, and other user data, the <b>internal media storage</b> needs to be erased.</string>
+    <string name="erase_internal_storage">Erase internal media storage</string>
+    <string name="erase_internal_storage_description">Erase all the data on internal media storage, such as music or photos</string>
+
+    <!-- Rescan storage -->
+    <string name="storage_rescan_media">Rescan media for the storage volume</string>
+
     <!-- [CHAR LIMIT=130] Location mode screen, sub category for IZat Location -->
     <string name="location_category_enhanced_location">Enhanced location (IZat)</string>
 
@@ -877,12 +887,6 @@
 
     <string name="external_storage_turn_on">External storage has been turned on</string>
     <string name="external_storage_turn_off">External storage has been turned off</string>
-
-    <!-- Protected Apps -->
-    <string name="menu_hidden_apps_delete">Reset</string>
-    <string name="menu_hidden_apps_reset_lock">Reset pattern lock</string>
-    <string name="protected_apps">Protected apps</string>
-    <string name="saving_protected_components">Saving component state\u2026</string>
 
     <string name="stats_collection_title">Stats collection</string>
     <string name="stats_collection_summary">When enabled, allows metrics collection</string>
