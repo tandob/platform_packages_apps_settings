@@ -229,8 +229,6 @@ public class SettingsActivity extends Activity
             R.id.wifi_settings,
             R.id.bluetooth_settings,
             R.id.data_usage_settings,
-            R.id.octos_settings,
-            R.id.about_octos_settings,
             R.id.sim_settings,
             R.id.wireless_settings,
             R.id.device_section,
@@ -257,6 +255,7 @@ public class SettingsActivity extends Activity
             R.id.status_bar_settings,
             R.id.dashboard,
             R.id.privacy_settings_cyanogenmod,
+            R.id.about_octos_settings,
             R.id.octos_settings
     };
 
