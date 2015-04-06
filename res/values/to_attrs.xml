@@ -45,4 +45,8 @@
         <attr name="textAllCaps" format="boolean" />
     </declare-styleable>
 
+     <declare-styleable name="SeekBarPreference">
+        <attr name="unitsLeft" format="string|reference" />
+        <attr name="unitsRight" format="string|reference" />
+    </declare-styleable>
 </resources>
