@@ -22,4 +22,8 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <!-- Gesture Anywhere -->
+    <dimen name="ga_gesture_thumbnail_inset">8dip</dimen>
+    <dimen name="ga_gesture_thumbnail_size">64dip</dimen>
+
 </resources>

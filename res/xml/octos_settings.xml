@@ -81,12 +81,22 @@
                 android:icon="@drawable/ic_settings_buttons"
                 />
 
+        <!-- Gesture anywhere -->
+        <PreferenceScreen
+                android:key="gesture_anywhere"
+                android:fragment="com.android.settings.octos.gestureanywhere.GestureAnywhereSettings"
+                android:title="@string/gesture_anywhere_title"
+                android:icon="@drawable/ic_settings_gestures"
+                settings:advanced="true"
+                />
+
         <!-- Circle app bar -->
         <PreferenceScreen
                android:key="app_circle_bar"
                android:fragment="com.android.settings.octos.AppCircleBar"
                android:title="@string/app_circle_bar_title"
-               android:icon="@drawable/ic_settings_app_circle" />
+               android:icon="@drawable/ic_settings_app_circle"
+               />
 
         <!-- Power Menu -->
         <PreferenceScreen

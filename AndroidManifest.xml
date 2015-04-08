@@ -2296,5 +2296,8 @@
                        android:value="com.android.settings.octos.OctosSettings" />
         </activity>
 
+        <activity android:name=".octos.gestureanywhere.GestureAnywhereBuilderActivity" />
+        <activity android:name=".octos.gestureanywhere.GestureAnywhereCreateGestureActivity" />
     </application>
+
 </manifest>
