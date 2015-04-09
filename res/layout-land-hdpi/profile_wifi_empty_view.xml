@@ -8,7 +8,6 @@
         android:gravity="center">
 
     <LinearLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -23,13 +22,13 @@
                 android:layout_marginEnd="30dip"
                 android:layout_marginBottom="30dip"
                 android:layout_gravity="center"
-                android:text="@string/no_bluetooth_triggers" />
+                android:text="@string/no_wifi_triggers" />
 
         <ImageView
-                android:layout_width="84dp"
-                android:layout_height="84dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_bluetooth_48px" />
+                android:src="@drawable/ic_signal_wifi_4_bar_48px" />
 
     </LinearLayout>
 </RelativeLayout>
