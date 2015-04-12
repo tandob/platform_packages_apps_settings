@@ -22,10 +22,13 @@
         <!-- About -->
         <PreferenceScreen
                 android:id="@+id/about_octos_settings"
-                android:title="@string/about_octos"
-                android:fragment="com.android.settings.octos.about.AboutTabHostFragment"
                 android:icon="@drawable/ic_tentacles_about"
-                />
+                android:title="@string/about_octos">
+                <intent
+                    android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.about.octos.aboutoctos"
+                    android:targetClass="com.about.octos.aboutoctos.AboutActivity" />
+        </PreferenceScreen>
 
         <!-- Themes -->
         <!-- NOTE: Intent.parseIntent looks for "categories" tag and not "category" -->

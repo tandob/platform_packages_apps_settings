@@ -255,7 +255,6 @@ public class SettingsActivity extends Activity
             R.id.status_bar_settings,
             R.id.dashboard,
             R.id.privacy_settings_cyanogenmod,
-            R.id.about_octos_settings,
             R.id.octos_settings
     };
 

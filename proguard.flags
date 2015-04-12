@@ -19,8 +19,6 @@
 -keep class com.android.settings.privacyguard.*
 -keep class com.android.settings.voicewakeup.*
 -keep class com.android.settings.octos.**
--keep class com.android.settings.astuetz.**
--keep class com.android.settings.koushikdutta.**
 
 # These would be stripped out since they are being created with reflection
 -keep class com.android.settings.dashboard.GenericSwitchToggle { *; }

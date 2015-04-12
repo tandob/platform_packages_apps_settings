@@ -19,32 +19,6 @@
 
 <resources>
 
-    <declare-styleable name="DeveloperPreference">
-        <attr name="twitterHandle" format="string"/>
-        <attr name="nameDev" format="string"/>
-        <attr name="donateLink" format="string"/>
-        <attr name="githubLink" format="string"/>
-        <attr name="emailDev" format="string"/>
-    </declare-styleable>
-
-    <declare-styleable name="UrlSetting">
-        <attr name="url" format="string"/>
-    </declare-styleable>
-
-    <declare-styleable name="PagerSlidingTabStrip">
-        <attr name="indicatorColor" format="color" />
-        <attr name="underlineColor" format="color" />
-        <attr name="dividerColor" format="color" />
-        <attr name="indicatorHeight" format="dimension" />
-        <attr name="underlineHeight" format="dimension" />
-        <attr name="dividerPadding" format="dimension" />
-        <attr name="tabPaddingLeftRight" format="dimension" />
-        <attr name="scrollOffset" format="dimension" />
-        <attr name="tabBackground" format="reference" />
-        <attr name="shouldExpand" format="boolean" />
-        <attr name="textAllCaps" format="boolean" />
-    </declare-styleable>
-
      <declare-styleable name="SeekBarPreference">
         <attr name="unitsLeft" format="string|reference" />
         <attr name="unitsRight" format="string|reference" />
