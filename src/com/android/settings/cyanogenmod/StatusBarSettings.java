@@ -15,16 +15,23 @@
  */
 package com.android.settings.cyanogenmod;
 
+import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.SwitchPreference;
+import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
+import android.text.TextUtils;
+import android.text.Spannable;
+import android.text.SpannableStringBuilder;
 import android.telephony.TelephonyManager;
 import android.text.format.DateFormat;
 import android.view.View;
@@ -34,6 +41,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
+import android.widget.EditText;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,11 +59,15 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
     private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 4;
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 6;
+    private static final String KEY_STATUS_BAR_GREETING = "status_bar_greeting";
 
     private ListPreference mStatusBarClock;
     private ListPreference mStatusBarAmPm;
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
+    private SwitchPreference mStatusBarGreeting;
+
+    private String mCustomGreetingText = "";
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -102,6 +114,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
         if (TelephonyManager.getDefault().getPhoneCount() <= 1) {
             removePreference(Settings.System.STATUS_BAR_MSIM_SHOW_EMPTY_ICONS);
+
+        mStatusBarGreeting = (SwitchPreference) findPreference(KEY_STATUS_BAR_GREETING);
+        mCustomGreetingText = Settings.System.getString(resolver, Settings.System.STATUS_BAR_GREETING);
+        boolean greeting = mCustomGreetingText != null && !TextUtils.isEmpty(mCustomGreetingText);
+        mStatusBarGreeting.setChecked(greeting); 
+
         }
     }
 
@@ -116,6 +134,50 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                 mStatusBarClock.setSummary(mStatusBarClock.getEntry());
         }
     }
+
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen,
+            final Preference preference) {
+        final ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mStatusBarGreeting) {
+           boolean enabled = mStatusBarGreeting.isChecked();
+           if (enabled) {
+                AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
+
+                alert.setTitle(R.string.status_bar_greeting_title);
+                alert.setMessage(R.string.status_bar_greeting_dialog);
+
+                // Set an EditText view to get user input
+                final EditText input = new EditText(getActivity());
+                input.setText(mCustomGreetingText != null ? mCustomGreetingText : "Welcome to OctOS");
+                alert.setView(input);
+                alert.setPositiveButton(getResources().getString(R.string.ok), new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        String value = ((Spannable) input.getText()).toString();
+                        Settings.System.putString(getActivity().getContentResolver(),
+                                Settings.System.STATUS_BAR_GREETING, value);
+                        updateCheckState(value);
+                    }
+                });
+                alert.setNegativeButton(getResources().getString(R.string.cancel), new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        // Canceled.
+                    }
+                });
+
+                alert.show();
+            } else {
+                Settings.System.putString(getActivity().getContentResolver(),
+                                Settings.System.STATUS_BAR_GREETING, "");
+            }
+        }
+        // If we didn't handle it, let preferences handle it.		
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+    
+    private void updateCheckState(String value) {
+		if (value == null || TextUtils.isEmpty(value)) mStatusBarGreeting.setChecked(false);
+	}  
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
