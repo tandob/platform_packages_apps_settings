@@ -149,6 +149,10 @@ public class QSTileHolder {
                 resourceName = "ic_qs_usb_tether_on";
                 stringId = R.string.qs_tile_usb_tether;
                 break;
+            case QSConstants.TILE_TENTACLES:
+                resourceName = "ic_qs_tentacles";
+                stringId = R.string.qs_tile_tentacles;
+                break;
             default:
                 return null;
         }
