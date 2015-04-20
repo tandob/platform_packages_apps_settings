@@ -22,12 +22,14 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.SwitchPreference;
 import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
+import android.provider.ContactsContract;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.text.TextUtils;
@@ -163,7 +165,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
                 // Set an EditText view to get user input
                 final EditText input = new EditText(getActivity());
-                input.setText(mCustomGreetingText != null ? mCustomGreetingText : "Welcome to OctOS");
+                input.setText(mCustomGreetingText != null ? mCustomGreetingText : String.format(getResources().getString(R.string.status_bar_greeting_default), readProfileOwnerName()));
                 alert.setView(input);
                 alert.setPositiveButton(getResources().getString(R.string.ok), new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int whichButton) {
@@ -280,4 +282,20 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                     return result;
                 }
             };
+
+    private String readProfileOwnerName() {
+
+        ContentResolver content = getContentResolver();
+
+        Cursor c = content.query(ContactsContract.Profile.CONTENT_URI, null,null, null, null);
+        String name = null;
+
+        if (c.getCount() > 0) {
+            c.moveToNext();
+            name = c.getString(c.getColumnIndex(ContactsContract.Profile.DISPLAY_NAME));
+        }else{
+            name = (getResources().getString(R.string.status_bar_greeting_no_user));
+        }
+        return name;
+    }
 }

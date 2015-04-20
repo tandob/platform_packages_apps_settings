@@ -34,6 +34,13 @@
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string>
 
+    <!-- Status bar greeting -->
+    <string name="status_bar_greeting_title">Greeting</string>
+    <string name="status_bar_greeting_summary">Display a custom greeting in the status bar after unlocking the device</string>
+    <string name="status_bar_greeting_dialog">Set your greeting</string>
+    <string name="status_bar_greeting_default">Hello %1$s. Welcome to OctOs!</string>
+    <string name="status_bar_greeting_no_user">friend</string>
+
     <!-- Lockscreen weather -->
     <string name="lockscreen_weather_title">Weather</string>
     <string name="lock_screen_weather_settings_title">Weather options</string>
