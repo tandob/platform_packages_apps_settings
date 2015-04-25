@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2014 The CyanogenMod Project
-
+ 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-
+ 
           http://www.apache.org/licenses/LICENSE-2.0
-
+ 
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -15,14 +15,18 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
+ 
+ 
     <string name="octos_settings_title">Tentacles</string>
-
+ 
+ 
     <string name="about_octos">About Team-OctOs</string>
-
+ 
+ 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string>
-
+ 
+ 
     <!-- Hide Icon -->
     <string name="settings_title">Hide Icon</string>
     <string name="hide_icon_title">Hide the Tentacles launcher icon</string>
@@ -30,13 +34,19 @@
         (Note: Does not Remove Tentacles from Device)
     </string>
     <string name="title_activity_settings">Hide Icon</string>
-
+ 
+ 
     <!-- LayersManager -->
     <string name="bitsyko_layers">Layers Manager</string>
-
+ 
+ 
     <!-- Statusbar-->
     <string name="status_bar_title">Status bar</string>
-
+    <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
+    <string name="status_bar_quick_qs_pulldown_summary">Right edge of the status bar pulls down Quick Settings</string>
+    <string name="status_bar_show_weather_title">Show weather</string>
+    <string name="status_bar_show_weather_summary">Show the weather above the Quick Settings panel</string>
+ 
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Battery status style</string>
     <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
@@ -44,14 +54,16 @@
     <string name="status_bar_battery_style_circle">Circle</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Hidden</string>
-
+ 
+ 
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Show battery percentage</string>
     <string name="status_bar_battery_percentage_dialog_title">Battery percentage</string>
     <string name="status_bar_battery_percentage_default">Hidden (default)</string>
     <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
-
+ 
+ 
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Reset</string>
@@ -63,7 +75,8 @@
     <string name="reset_message">Reset all entries to default?</string>
     <string name="style_title">Style</string>
     <string name="add">Add</string>
-
+ 
+ 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on color below to apply</string>
@@ -73,7 +86,8 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Set</string>
     <string name="color_default">Default</string>
-
+ 
+ 
     <!-- Status bar | Clock -->
     <string name="status_bar_clock">Clock and date</string>
     <string name="status_bar_clock_title">Clock and date style</string>
@@ -107,7 +121,8 @@
     <string name="clock_date_style_uppercase">Uppercase</string>
     <string name="clock_date_format_custom">Custom java format</string>
     <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
-
+ 
+ 
     <!-- Power menu -->
     <string name="power_menu_title">Power menu</string>
     <string name="power_menu_reboot_title">Reboot menu</string>
@@ -119,11 +134,13 @@
     <string name="power_menu_bug_report_title">Bug report</string>
     <string name="power_menu_sound_title">Sound panel</string>
     <string name="power_menu_bug_report_disabled">Bug reporting is disabled in development settings</string>
-
+ 
+ 
          <!-- Advanced reboot options -->
     <string name="advanced_reboot_title">Advanced reboot</string>
     <string name="advanced_reboot_summary">When unlocked, include options in the power menu for rebooting into recovery, bootloader or performing a soft reboot</string>
-
+ 
+ 
      <!-- Notification drawer -->
     <string name="notification_drawer_title">Notification drawer</string>
     <string name="qs_category_title">Quick Settings panel</string>
@@ -147,4 +164,29 @@
 
     <!-- Display : Rotation  -->
     <string name="display_rotation_title">Rotation</string>
+
+     <!-- Heads Up -->
+    <string name="category_heads_up">Heads up notifications</string>
+    <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
+    <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
+    <string name="add_heads_up_package">Add app</string>
+    <string name="add_heads_up_dnd_summary">Don\'t show heads up in these applications</string>
+    <string name="add_heads_up_blacklist_summary">Don\'t show heads up from these applications</string>
+    <string name="heads_up_dnd_title">Do not disturb</string>
+    <string name="heads_up_blacklist_title">Blacklist</string>
+    <string name="heads_up_disabled_notice">To allow applications to display interactive notifications in a pop-up window on your screen, enable Heads up.</string>
+
+    <!-- Blacklist preferences -->     
+	    <string name="blacklist_title">Blocked caller list</string>
+	    <string name="blacklist_edit_dialog_title">Edit blocked phone number</string>
+     <string name="profile_choose_app">Choose app</string>
+     <string name="dialog_delete_message">Remove selected item?</string>
+     <string name="dialog_delete_message">Remove selected item?</string>
+     <string name="dialog_delete_title">Delete</string>
+     <string name="block_notifications_summary">Manage ignored notifications and filters</string>
+     <string name="block_notifications_title">Filter notifications</string>
+
+     <!-- Heads up -->  
+     <string name="heads_up_notifications">Heads up</string>
+     <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
 </resources>
