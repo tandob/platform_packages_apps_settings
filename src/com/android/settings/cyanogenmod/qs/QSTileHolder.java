@@ -152,6 +152,9 @@ public class QSTileHolder {
             case QSConstants.TILE_TENTACLES:
                 resourceName = "ic_qs_tentacles";
                 stringId = R.string.qs_tile_tentacles;
+            case QSConstants.TILE_HEADS_UP:
+                resourceName = "ic_qs_heads_up_on";
+                stringId = R.string.qs_tile_heads_up;
                 break;
             default:
                 return null;
