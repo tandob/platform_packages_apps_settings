@@ -178,18 +178,14 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 // Unsupported value, force default
                 currentDensity = defaultDensity;
             }
-            int factor = 40;
-            if (defaultDensity > 400) {
-                factor = 80;
-            }
-            int minimumDensity = (defaultDensity - (factor * 2));
             int currentIndex = -1;
-            String[] densityEntries = new String[5];
-            String[] densityValues = new String[5];
-            for (int idx = 0; idx < 5; ++idx) {
-                int val = (minimumDensity + (factor * idx));
+            String[] densityEntries = new String[8];
+            String[] densityValues = new String[8];
+            for (int idx = 0; idx < 8; ++idx) {
+                int pct = (75 + idx*5);
+                int val = defaultDensity * pct / 100;
                 densityEntries[idx] = Integer.toString(val);
-                if (val == defaultDensity) {
+                if (pct == 100) {
                     densityEntries[idx] += " (" + defaultText + ")";
                 }
                 densityValues[idx] = Integer.toString(val);
