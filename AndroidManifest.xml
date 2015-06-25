@@ -2837,5 +2837,18 @@
                        android:value="com.android.settings.octos.OctosSettings" />
         </activity>
 
+        <activity-alias android:name="Settings$TentaclesActivity"
+                  android:targetActivity="Settings$OctosSettingsActivity"
+                  android:label="@string/octos_settings_title"
+                  android:taskAffinity=""
+                  android:icon="@mipmap/ic_launcher_tentacles"
+                  android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.android.settings.octos.OctosSettings" />
+        </activity-alias>
+
     </application>
 </manifest>

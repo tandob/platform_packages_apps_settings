@@ -19,4 +19,12 @@
     <!-- Tentacles -->
     <string name="octos_settings_title">Tentacles</string>
 
+    <!-- Hide Icon -->
+    <string name="settings_title">Hide Icon</string>
+    <string name="hide_icon_title">Hide the Tentacles launcher icon</string>
+    <string name="hide_icon_description">Removes Tentacle Icon from App Drawer
+        (Note: Does not Remove Tentacles from Device)
+    </string>
+    <string name="title_activity_settings">Hide Icon</string>
+
 </resources>
