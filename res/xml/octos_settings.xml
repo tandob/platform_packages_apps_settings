@@ -30,4 +30,10 @@
                     android:targetClass="eu.chainfire.supersu.MainActivity" />
         </PreferenceScreen>
 
+        <SwitchPreference
+                   android:key="hide_tentacles_icon"
+                   android:title="@string/hide_icon_title"
+                   android:summary="@string/hide_icon_description"
+                   android:defaultValue="false" />
+
 </PreferenceScreen>
