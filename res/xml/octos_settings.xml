@@ -19,4 +19,10 @@
     android:title="@string/octos_settings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+        <SwitchPreference
+                   android:key="hide_tentacles_icon"
+                   android:title="@string/hide_icon_title"
+                   android:summary="@string/hide_icon_description"
+                   android:defaultValue="false" />
+
 </PreferenceScreen>
