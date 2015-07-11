@@ -209,4 +209,7 @@
     </string>
     <string name="title_activity_settings">Hide Icon</string>
 
+    <!-- QuickSettings 4 columns -->
+    <string name="qs_four_columns_title">Show four tiles per row</string>
+
 </resources>
