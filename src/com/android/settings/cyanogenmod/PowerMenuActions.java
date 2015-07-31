@@ -48,7 +48,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
 
     private SwitchPreference mRebootPref;
     private SwitchPreference mScreenshotPref;
-    private SwitchPreference mProfilePref;
     private SwitchPreference mAirplanePref;
     private SwitchPreference mUsersPref;
     private SwitchPreference mSettingsPref;
@@ -87,8 +86,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                 mRebootPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_REBOOT);
             } else if (action.equals(GLOBAL_ACTION_KEY_SCREENSHOT)) {
                 mScreenshotPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_SCREENSHOT);
-            } else if (action.equals(GLOBAL_ACTION_KEY_PROFILE)) {
-                mProfilePref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_PROFILE);
             } else if (action.equals(GLOBAL_ACTION_KEY_AIRPLANE)) {
                 mAirplanePref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_AIRPLANE);
             } else if (action.equals(GLOBAL_ACTION_KEY_USERS)) {
@@ -117,10 +114,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
 
         if (mScreenshotPref != null) {
             mScreenshotPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_SCREENSHOT));
-        }
-
-        if (mProfilePref != null) {
-            mProfilePref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_PROFILE));
         }
 
         if (mAirplanePref != null) {
@@ -175,10 +168,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         } else if (preference == mScreenshotPref) {
             value = mScreenshotPref.isChecked();
             updateUserConfig(value, GLOBAL_ACTION_KEY_SCREENSHOT);
-
-        } else if (preference == mProfilePref) {
-            value = mProfilePref.isChecked();
-            updateUserConfig(value, GLOBAL_ACTION_KEY_PROFILE);
 
         } else if (preference == mAirplanePref) {
             value = mAirplanePref.isChecked();
@@ -240,17 +229,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     private void updatePreferences() {
         boolean bugreport = Settings.Secure.getInt(getContentResolver(),
                 Settings.Secure.BUGREPORT_IN_POWER_MENU, 0) != 0;
-        boolean profiles = Settings.System.getInt(getContentResolver(),
-                Settings.System.SYSTEM_PROFILES_ENABLED, 1) != 0;
-
-        if (mProfilePref != null) {
-            mProfilePref.setEnabled(profiles);
-            if (profiles) {
-                mProfilePref.setSummary(null);
-            } else {
-                mProfilePref.setSummary(R.string.power_menu_profiles_disabled);
-            }
-        }
 
         if (mBugReportPref != null) {
             mBugReportPref.setEnabled(bugreport);
