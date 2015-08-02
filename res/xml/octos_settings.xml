@@ -55,6 +55,13 @@
             android:title="@string/lcd_density"
             android:persistent="false" />
 
+        <!-- Lockscreen -->
+       <PreferenceScreen
+            android:key="lock_screen_general_category"
+            android:fragment="com.android.settings.octos.LockScreenSettings"
+            android:title="@string/lockscreen_settings_title"
+            android:icon="@drawable/ic_settings_lockscreen" />
+
         <!-- Misc Tweaks -->
         <PreferenceScreen
             android:id="@+id/misc_tweaks_settings"
