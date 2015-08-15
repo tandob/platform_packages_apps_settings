@@ -29,4 +29,7 @@
     </string>
     <string name="title_activity_settings">Hide Icon</string>
 
+    <!-- LayersManager -->
+    <string name="bitsyko_layers">Layers Manager</string>
+
 </resources>

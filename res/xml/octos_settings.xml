@@ -19,6 +19,17 @@
     android:title="@string/octos_settings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+         <!-- Layers -->
+        <PreferenceScreen
+                android:id="@+id/bitsyko_layers"
+                android:icon="@drawable/ic_bitsyko_layers"
+                android:title="@string/bitsyko_layers">
+                <intent
+                    android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.lovejoy777.rroandlayersmanager"
+                    android:targetClass="com.lovejoy777.rroandlayersmanager.menu" />
+        </PreferenceScreen>
+
         <!-- SuperSU -->
         <PreferenceScreen
                 android:id="@+id/supersu_settings"
