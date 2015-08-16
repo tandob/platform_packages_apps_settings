@@ -19,6 +19,8 @@
     <!-- Tentacles -->
     <string name="octos_settings_title">Tentacles</string>
 
+    <string name="about_octos">About Team-OctOs</string>
+
     <!-- Hide Icon -->
     <string name="settings_title">Hide Icon</string>
     <string name="hide_icon_title">Hide the Tentacles launcher icon</string>
