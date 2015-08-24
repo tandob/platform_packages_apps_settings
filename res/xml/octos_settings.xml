@@ -30,6 +30,13 @@
                     android:targetClass="com.about.octos.aboutoctos.AboutOctOs" />
         </PreferenceScreen>
 
+         <!-- Power Menu -->
+         <PreferenceScreen
+         android:key="power_menu"
+         android:title="@string/power_menu_title"
+         android:fragment="com.android.settings.octos.PowerMenuActions"
+         android:icon="@drawable/ic_tentacles_power_menu" />
+
         <!-- Status Bar -->
         <PreferenceScreen
                 android:key="clock_style_pref"
