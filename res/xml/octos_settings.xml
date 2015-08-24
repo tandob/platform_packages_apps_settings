@@ -30,6 +30,13 @@
                     android:targetClass="com.about.octos.aboutoctos.AboutOctOs" />
         </PreferenceScreen>
 
+         <!-- Power Menu -->
+         <PreferenceScreen
+         android:key="power_menu"
+         android:title="@string/power_menu_title"
+         android:fragment="com.android.settings.octos.PowerMenuActions"
+         android:icon="@drawable/ic_tentacles_power_menu" />
+
          <!-- Layers -->
         <PreferenceScreen
                 android:id="@+id/bitsyko_layers"

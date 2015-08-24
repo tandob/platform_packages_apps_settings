@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Power menu -->
+    <string-array name="power_menu_actions_array" translatable="false">
+        <item>power</item>
+        <item>reboot</item>
+        <item>screenshot</item>
+        <item>airplane</item>
+        <item>users</item>
+    </string-array>
+
+</resources>
