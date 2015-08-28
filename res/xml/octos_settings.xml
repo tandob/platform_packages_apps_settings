@@ -44,6 +44,13 @@
          android:fragment="com.android.settings.octos.PowerMenuActions"
          android:icon="@drawable/ic_tentacles_power_menu" />
 
+         <!-- Notification drawer -->
+        <PreferenceScreen
+                android:id="@+id/notification_drawer_settings"
+                android:title="@string/notification_drawer_title"
+                android:fragment="com.android.settings.octos.NotificationDrawerSettings"
+                android:icon="@drawable/ic_settings_notification_drawer"
+                />
 
          <!-- Layers -->
         <PreferenceScreen
