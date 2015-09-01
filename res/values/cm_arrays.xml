@@ -127,6 +127,9 @@
         <item>5</item>
         <item>10</item>
         <item>30</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
         <item>@string/sms_security_check_unlimited</item>
     </string-array>
 
@@ -135,6 +138,9 @@
         <item>5</item>
         <item>10</item>
         <item>30</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
         <item>999999</item>
     </string-array>
 
