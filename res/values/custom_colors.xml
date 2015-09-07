@@ -38,4 +38,10 @@
     <color name="ownerinfo_divider_color">#ff404040</color>
     <!-- Installed app details -->
     <color name="security_settings_billing_desc_color">#ffffb060</color>
+
+    <!-- Expanded Desktop-->
+    <drawable name="expanded_item_bg_activated">#ffEEEEEE</drawable>
+    <drawable name="expanded_item_bg">@android:color/background_light</drawable>
+    <color name="expanded_button_color_normal">#4CAF50</color>
+    <color name="expanded_button_color_close">#F44336</color>
 </resources> 
