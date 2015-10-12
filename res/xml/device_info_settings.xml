@@ -145,7 +145,7 @@
 
         <!-- Build date -->
         <Preference android:key="build_date"
-                style="?android:preferenceInformationStyle"
+                android:fragment="com.android.settings.octos.OctosSettings"
                 android:title="@string/build_date"
                 android:summary="@string/build_date_default" />
 
