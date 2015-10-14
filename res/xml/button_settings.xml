@@ -44,4 +44,15 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="category_wakeup_options"
+        android:title="@string/volume_options_title" >
+
+    <SwitchPreference
+        android:key="volume_rocker_wake"
+        android:summary="@string/volume_rocker_wake_summary"
+        android:title="@string/volume_rocker_wake_title" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
