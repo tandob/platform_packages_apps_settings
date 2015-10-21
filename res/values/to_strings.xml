@@ -118,6 +118,7 @@
     <string name="add">Add</string>
 
     <!-- Status bar | Clock -->
+    <string name="status_bar_clock_catagory">Clock</string>
     <string name="status_bar_clock">Clock and date</string>
     <string name="status_bar_clock_title">Clock and date style</string>
     <string name="clock_title_enable">Alignment</string>
@@ -150,6 +151,8 @@
     <string name="clock_date_style_uppercase">Uppercase</string>
     <string name="clock_date_format_custom">Custom java format</string>
     <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
+    <string name="status_bar_clock_catagory">Clock</string>
+    <string name="status_bar_general_catagory">General options</string>
 
     <!-- Status bar - Battery -->
     <string name="status_bar_screen_title">Status bar</string>

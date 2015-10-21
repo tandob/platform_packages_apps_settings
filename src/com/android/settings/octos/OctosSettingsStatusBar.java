@@ -27,10 +27,10 @@ import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class BatterySettings extends SettingsPreferenceFragment
+public class OctosSettingsStatusBar extends SettingsPreferenceFragment
         implements OnPreferenceChangeListener {
 
-    private static final String TAG = "BatterySettings";
+    private static final String TAG = "OctosSettingsStatusBar";
 
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
@@ -49,7 +49,7 @@ public class BatterySettings extends SettingsPreferenceFragment
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.octos_settings_battery);
+        addPreferencesFromResource(R.xml.octos_settings_statusbar);
 
         ContentResolver resolver = getActivity().getContentResolver();
 
