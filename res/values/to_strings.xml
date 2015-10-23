@@ -178,6 +178,7 @@
 
     <!-- Notification drawer -->
     <string name="notification_drawer_title">Notification Drawer</string>
+    <string name="navbar_settings_title">Navigation Bar</string>
 
     <!-- Quick settings quick pull down -->
     <string name="quick_pulldown_title">Quick pulldown</string>
@@ -221,6 +222,9 @@
     <!-- Statusbar weather-->
     <string name="status_bar_show_weather_title">Show weather</string>
     <string name="status_bar_show_weather_summary">Show the weather above the Quick Settings panel</string>
+
+    <!-- Statusbar power key -->
+    <string name="hardware_keys_power_key_title">Power button</string>
 
     <!-- Volume rocker wake -->
     <string name="volume_options_title">Volume buttons</string>
