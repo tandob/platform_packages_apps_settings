@@ -16,7 +16,8 @@
 
 <resources>
 
-    <color name="theme_accent">#ff009688</color>
+    <!--<color name="theme_accent">#ff009688</color>-->
+    <color name="theme_accent">@*android:color/material_deep_teal_500</color>
 
     <color name="setting_separator">#ff484848</color>
     <color name="extension_list_item_color">#ff999999</color>
