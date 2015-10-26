@@ -55,6 +55,14 @@
             android:title="@string/lcd_density"
             android:persistent="false" />
 
+        <!-- Misc Tweaks -->
+        <PreferenceScreen
+            android:id="@+id/misc_tweaks_settings"
+            android:fragment="com.android.settings.octos.MiscTweaks"
+            android:title="@string/misctweaks_category"
+            android:icon="@drawable/ic_misctweaks"
+            />
+
         <!-- Navbar -->
         <PreferenceScreen
             android:id="@+id/navbar_settings"
