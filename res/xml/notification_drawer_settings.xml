@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright (C) 2014 The CyanogenMod Project
+<!-- Copyright (C) 2015 Team OctOS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -31,28 +31,42 @@
         android:summary="@string/status_bar_show_weather_summary"
         android:defaultValue="false" />
 
-    <com.android.settings.preference.SecureSettingSwitchPreference
-        android:key="qs_show_brightness_slider"
-        android:title="@string/qs_brightness_slider_title_eos"
-        android:summary="@string/qs_brightness_slider_summary"
-        android:defaultValue="true" />
+    <PreferenceCategory
+        android:title="@string/systemui_tuner_qs_category_title">
 
-    <com.android.settings.preference.SecureSettingSwitchPreference
-        android:key="quick_settings_vibrate"
-        android:title="@string/quick_settings_vibrate_title"
-        android:summary="@string/quick_settings_vibrate_summary"
-        android:defaultValue="false"/>
+        <PreferenceScreen
+            android:key="systemui_tuner_qs"
+            android:title="@string/systemui_tuner_qs_title" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.QsActivity" />
+        </PreferenceScreen>
 
-    <com.android.settings.preference.SecureSettingSwitchPreference
-        android:key="qs_use_four_columns"
-        android:title="@string/qs_four_columns_title"
-        android:defaultValue="false" />
+        <com.android.settings.preference.SecureSettingSwitchPreference
+            android:key="sysui_qs_main_tiles"
+            android:title="@string/qs_main_tiles_title"
+            android:summaryOn="@string/qs_main_tiles_summary_on"
+            android:summaryOff="@string/qs_main_tiles_summary_off"
+            android:defaultValue="true" />
 
-    <com.android.settings.preference.SecureSettingSwitchPreference
-        android:key="sysui_qs_main_tiles"
-        android:title="@string/qs_main_tiles_title"
-        android:summaryOn="@string/qs_main_tiles_summary_on"
-        android:summaryOff="@string/qs_main_tiles_summary_off"
-        android:defaultValue="true" />
+        <com.android.settings.preference.SecureSettingSwitchPreference
+            android:key="qs_use_four_columns"
+            android:title="@string/qs_four_columns_title"
+            android:defaultValue="false" />
+
+        <com.android.settings.preference.SecureSettingSwitchPreference
+            android:key="qs_show_brightness_slider"
+            android:title="@string/qs_brightness_slider_title_eos"
+            android:summary="@string/qs_brightness_slider_summary"
+            android:defaultValue="true" />
+
+        <com.android.settings.preference.SecureSettingSwitchPreference
+            android:key="quick_settings_vibrate"
+            android:title="@string/quick_settings_vibrate_title"
+            android:summary="@string/quick_settings_vibrate_summary"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

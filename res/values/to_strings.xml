@@ -328,4 +328,10 @@
     <string name="recents_show_membar_title">Memory bar</string>
     <string name="recents_show_membar_summary">Show a bar with the device\'s available memory</string>
 
+    <!-- SystemUI Tuner Parts -->
+    <string name="systemui_tuner_statusbar_title">Statusbar Items</string>
+    <string name="systemui_tuner_statusbar_summary">Select the items which will be displayed on the statusbar</string>
+    <string name="systemui_tuner_qs_title">Select and order tiles</string>
+    <string name="systemui_tuner_qs_category_title">Quick Settings panel</string>
+
 </resources>
