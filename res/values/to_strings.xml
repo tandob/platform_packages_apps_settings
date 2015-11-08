@@ -334,4 +334,8 @@
     <string name="systemui_tuner_qs_title">Select and order tiles</string>
     <string name="systemui_tuner_qs_category_title">Quick Settings panel</string>
 
+    <!-- Lockscreen Targets -->
+    <string name="lockscreen_targets_title">Shortcuts</string>
+    <string name="lockscreen_targets_message">Lock screen shortcuts</string>
+
 </resources>
