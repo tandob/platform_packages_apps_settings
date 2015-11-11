@@ -2959,5 +2959,6 @@
 
         <activity android:name=".octos.gestureanywhere.GestureAnywhereBuilderActivity" />
         <activity android:name=".octos.gestureanywhere.GestureAnywhereCreateGestureActivity" />
+        <activity android:name="com.android.settings.octos.fragments.Traffic" />
     </application>
 </manifest>
