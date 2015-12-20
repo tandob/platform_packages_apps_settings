@@ -59,13 +59,13 @@
         </PreferenceScreen>
 
         <!-- Anonymous statistics - (CMStats) -->
-        <PreferenceScreen
+<!--        <PreferenceScreen
             android:key="cmstats"
             android:title="@string/anonymous_statistics_title"
             android:summary="@string/anonymous_statistics_summary"
             android:fragment="com.android.settings.cmstats.AnonymousStats" >
         </PreferenceScreen>
-
+-->
         <!-- Legal Information -->
         <PreferenceScreen
                 android:key="container"
@@ -84,11 +84,11 @@
         </PreferenceScreen>
 
         <!-- Contributors cloud -->
-        <PreferenceScreen android:key="contributors_cloud"
+<!--        <PreferenceScreen android:key="contributors_cloud"
             android:title="@string/contributors_cloud_fragment_title"
             android:fragment="com.android.settings.contributors.ContributorsCloudFragment" >
         </PreferenceScreen>
-
+-->
         <!-- Device name -->
         <Preference android:key="device_name"
                 style="?android:preferenceInformationStyle"
