@@ -331,13 +331,13 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     }
 
     private void writeAdvancedRebootOptions() {
-        Settings.Secure.putInt(getActivity().getContentResolver(),
-                Settings.Secure.ADVANCED_REBOOT,
+        CMSettings.Secure.putInt(getActivity().getContentResolver(),
+                CMSettings.Secure.ADVANCED_REBOOT,
                 mAdvancedReboot.isChecked() ? 1 : 0);
     }
 
     private void updateAdvancedRebootOptions() {
-        mAdvancedReboot.setChecked(Settings.Secure.getInt(getActivity().getContentResolver(),
-                Settings.Secure.ADVANCED_REBOOT, 0) != 0);
+        mAdvancedReboot.setChecked(CMSettings.Secure.getInt(getActivity().getContentResolver(),
+                CMSettings.Secure.ADVANCED_REBOOT, 0) != 0);
     }
 }
