@@ -29,4 +29,6 @@
     </string>
     <string name="title_activity_settings">Hide Icon</string>
 
+    <string name="sms_security_check_unlimited">Unlimited</string>
+
 </resources>
