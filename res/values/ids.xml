@@ -20,4 +20,5 @@
     <item type="id" name="preference_highlight_key" />
     <item type="id" name="oclick" />
     <item type="id" name="octos_settings" />
+    <item type="id" name="bugreport" />
 </resources>
