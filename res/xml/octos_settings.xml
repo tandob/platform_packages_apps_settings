@@ -94,7 +94,7 @@
 
         <!-- SuperSU -->
         <PreferenceScreen
-                android:id="@+id/supersu_settings"
+                android:key="supersu_settings"
                 android:icon="@drawable/ic_settings_supersu"
                 android:title="@string/supersu_title">
                 <intent

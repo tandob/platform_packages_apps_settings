@@ -32,6 +32,7 @@ import android.preference.SwitchPreference;
 import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
 
 import java.util.List;
 
@@ -39,6 +40,7 @@ public class OctosSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String KEY_HIDE_TENTACLE_ICON = "hide_tentacles_icon";
+    private static final String SUPERSU_APP_PACKAGE = "eu.chainfire.supersu";
 
     private SwitchPreference mHideTentaclesIcon;
 
@@ -55,6 +57,10 @@ public class OctosSettings extends SettingsPreferenceFragment implements
 
         mHideTentaclesIcon = (SwitchPreference) findPreference(KEY_HIDE_TENTACLE_ICON);
         mHideTentaclesIcon.setOnPreferenceChangeListener(this);
+
+        if (!Utils.isPackageInstalled(getActivity(), SUPERSU_APP_PACKAGE)) {
+            getPreferenceScreen().removePreference(findPreference("supersu_settings"));
+        }
     }
 
     @Override
