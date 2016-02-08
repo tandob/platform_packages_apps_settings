@@ -16,7 +16,9 @@
 
 package com.android.settings.octos;
 
+import android.content.ComponentName;
 import android.content.ContentResolver;
+import android.content.Intent;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -33,6 +35,8 @@ import com.android.settings.octos.SeekBarPreference;
 public class LockScreenWeatherSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private static final String KEY_LOCKCLOCK_WEATHER =
+            "lockclock_weather";
     private static final String PREF_CONDITION_ICON =
             "weather_condition_icon";
     private static final String PREF_HIDE_WEATHER =
@@ -89,6 +93,18 @@ public class LockScreenWeatherSettings extends SettingsPreferenceFragment implem
     public void onResume() {
         super.onResume();
         updatePreference();
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        final String key = preference.getKey();
+        if (KEY_LOCKCLOCK_WEATHER.equals(key)) {
+            Intent intent = new Intent().setComponent(new ComponentName(
+                "com.cyanogenmod.lockclock", "com.cyanogenmod.lockclock.preference.Preferences"));
+            intent.putExtra(":android:show_fragment", "com.cyanogenmod.lockclock.preference.WeatherPreferences");
+            startActivity(intent);
+        }
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     private void updatePreference() {

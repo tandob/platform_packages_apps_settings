@@ -22,6 +22,11 @@
         android:title="@string/weather_show_weather_title"
         android:summary="@string/weather_show_weather_summary" />
 
+    <PreferenceScreen
+        android:key="lockclock_weather"
+        android:title="@string/weather_settings_title"
+        android:summary="@string/weather_settings_summary" />
+
     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
         android:key="lock_screen_show_weather_location"
         android:title="@string/weather_show_location_title"
