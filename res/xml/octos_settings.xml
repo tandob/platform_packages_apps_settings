@@ -45,6 +45,14 @@
                 android:icon="@drawable/ic_settings_buttons"
                 />
 
+        <!-- Gesture anywhere -->
+        <PreferenceScreen
+                android:key="gesture_anywhere"
+                android:fragment="com.android.settings.octos.gestureanywhere.GestureAnywhereSettings"
+                android:title="@string/gesture_anywhere_title"
+                android:icon="@drawable/ic_gestureanywhere"
+                />
+
         <!-- Lock screen -->
         <PreferenceScreen
                 android:id="@+id/lockscreen_settings"
