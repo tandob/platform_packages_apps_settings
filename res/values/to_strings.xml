@@ -79,4 +79,9 @@
     <string name="unlock_quick_unlock_control_title">Quick unlock</string>
     <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
 
+    <!-- Status bar greeting -->
+    <string name="status_bar_greeting_title">Greeting</string>
+    <string name="status_bar_greeting_summary">Display a custom greeting in the status bar after unlocking the device</string>
+    <string name="status_bar_greeting_dialog">Set your greeting</string>
+
 </resources>
