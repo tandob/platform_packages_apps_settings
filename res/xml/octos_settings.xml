@@ -87,6 +87,14 @@
                 android:icon="@drawable/ic_settings_profiles"
                 />
 
+        <!-- Recents -->
+        <PreferenceScreen
+                android:id="@+id/recentsr_settings"
+                android:title="@string/recents_title"
+                android:fragment="com.android.settings.octos.Recents"
+                android:icon="@drawable/ic_recents"
+                />
+
         <!-- Status bar -->
         <PreferenceScreen
                 android:id="@+id/status_bar_settings"
