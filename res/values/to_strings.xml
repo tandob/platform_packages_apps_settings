@@ -191,7 +191,7 @@
     <string name="immersive_recents_navbar">Navbar only</string>
 
     <!-- OmniSwitch -->
-    <string name="aosp_recents_title">AOSP recents</string>
+    <string name="aosp_recents_title">Recents</string>
     <string name="omniswitch_recents_title">OmniSwitch recents</string>
     <string name="omniswitch_category">OmniSwitch</string>
     <string name="recents_use_omniswitch_title">Use for recents</string>
