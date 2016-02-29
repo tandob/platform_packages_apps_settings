@@ -6,7 +6,7 @@
     android:viewportHeight="400">
 
     <path
-        android:fillColor="#039588"
+        android:fillColor="@color/theme_accent"
         android:strokeWidth="1"
         android:pathData="M 244.00,42.00 C 244.00,42.00 275.00,42.00 275.00,42.00 283.15,42.15
 282.99,44.78 283.00,52.00 283.00,52.00 283.00,270.00 283.00,270.00 283.00,270.00
