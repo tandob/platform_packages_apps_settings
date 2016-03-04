@@ -21,6 +21,8 @@ import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import cyanogenmod.providers.CMSettings;
+
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 public class BatteryBar extends SettingsPreferenceFragment implements
@@ -74,6 +76,24 @@ public class BatteryBar extends SettingsPreferenceFragment implements
         mBatteryBarThickness.setValue((Settings.System.getInt(resolver,
                 Settings.System.STATUSBAR_BATTERY_BAR_THICKNESS, 1)) + "");
 
+        // Only show the battery bar options for the navigation bar if navigation bar is enabled.
+        try {
+            boolean forceNavbar = CMSettings.Secure.getInt(getContentResolver(),
+                    CMSettings.Secure.DEV_FORCE_SHOW_NAVBAR, 0) == 1;
+            boolean hasNavBar = WindowManagerGlobal.getWindowManagerService().hasNavigationBar()
+                    || forceNavbar;
+
+            if (hasNavBar) {
+                mBatteryBar.setEntries(getResources().getStringArray(R.array.battery_bar_entries));
+                mBatteryBar.setEntryValues(getResources().getStringArray(R.array.battery_bar_values));
+            } else {
+                mBatteryBar.setEntries(getResources().getStringArray(R.array.battery_bar_entries_no_navbar));
+                mBatteryBar.setEntryValues(getResources().getStringArray(R.array.battery_bar_values_no_navbar));
+            }
+
+        } catch (RemoteException e) {
+            Log.e(TAG, "Error getting navigation bar status");
+        }
     }
 
     @Override
