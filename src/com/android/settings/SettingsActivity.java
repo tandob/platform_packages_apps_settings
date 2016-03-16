@@ -295,6 +295,7 @@ public class SettingsActivity extends Activity
             R.id.home_settings,
             R.id.dashboard,
             R.id.privacy_settings_cyanogenmod,
+            R.id.button_settings,
             R.id.octos_settings
     };
 
@@ -317,7 +318,7 @@ public class SettingsActivity extends Activity
             HomeSettings.class.getName(),
             DisplaySettings.class.getName(),
             DeviceInfoSettings.class.getName(),
-            ManageApplications.class.getName(),
+            ManageApplications.class.getName(), 
             ManageAssist.class.getName(),
             ProcessStatsUi.class.getName(),
             NotificationStation.class.getName(),
