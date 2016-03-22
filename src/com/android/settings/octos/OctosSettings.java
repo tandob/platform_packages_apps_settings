@@ -41,6 +41,7 @@ public class OctosSettings extends SettingsPreferenceFragment implements
 
     private static final String KEY_HIDE_TENTACLE_ICON = "hide_tentacles_icon";
     private static final String SUPERSU_APP_PACKAGE = "eu.chainfire.supersu";
+    private static final String KERNELADIUTOR_APP_PACKAGE = "com.grarak.kerneladiutor";
 
     private SwitchPreference mHideTentaclesIcon;
 
@@ -61,6 +62,11 @@ public class OctosSettings extends SettingsPreferenceFragment implements
         if (!Utils.isPackageInstalled(getActivity(), SUPERSU_APP_PACKAGE)) {
             getPreferenceScreen().removePreference(findPreference("supersu_settings"));
         }
+
+        if (!Utils.isPackageInstalled(getActivity(), KERNELADIUTOR_APP_PACKAGE)) {
+            getPreferenceScreen().removePreference(findPreference("kerneladiutor_settings"));
+        }
+
     }
 
     @Override
