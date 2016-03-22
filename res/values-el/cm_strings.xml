@@ -37,7 +37,7 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Έκδοση CyanogenMod</string>
+  <string name="mod_version">Έκδοση OctOS</string>
   <string name="mod_version_default">Άγνωστη</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Μοντέλο συσκευής</string>
@@ -49,7 +49,7 @@
   <!-- About phone screen, build date -->
   <string name="build_date">Ημερομηνία έκδοσης</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Ενημερώσεις CyanogenMod</string>
+  <string name="cmupdate_settings_title">Ενημερώσεις OctOS</string>
   <!-- Settings switch for updating Cyanogen recovery -->
   <string name="update_recovery_title">Ενημέρωση Cyanogen recovery</string>
   <string name="update_recovery_summary">Ενημέρωση της recovery με τις ενημερώσεις συστήματος</string>
@@ -835,7 +835,7 @@
   <string name="no_filters_title">Δεν έχουν οριστεί φίλτρα</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Στατιστικά CyanogenMod</string>
+  <string name="anonymous_statistics_title">Στατιστικά OctOS</string>
   <string name="anonymous_statistics_summary">Βοηθήστε το CyanogenMod να γίνει καλύτερο ενεργοποιώντας την αποστολή ανώνυμων στατιστικών στοιχείων</string>
   <string name="anonymous_statistics_warning_title">Σχετικά</string>
   <string name="anonymous_statistics_warning">Ενεργοποιώντας τα στατιστικά του CyanogenMod επιτρέπετε την αποστολή
@@ -983,7 +983,7 @@
   <string name="interruptions_ignore_while_media_title">Πρόληψη μείωσης έντασης πολυμέσων</string>
   <string name="interruptions_ignore_while_media_summary">Να μη μειώνεται η ένταση της αναπαραγωγής πολυμέσων όταν φτάνει μια ειδοποίηση</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Νομικές πληροφορίες CyanogenMod</string>
+  <string name="cmlicense_title">Νομικές πληροφορίες OctOS</string>
   <!-- Menu label for reset the battery stats -->
   <string name="menu_stats_reset">Επαναφορά στατιστικών</string>
   <!-- Reset stats confirmation dialog's message -->

@@ -32,7 +32,7 @@
   <string name="root_access_all">應用程式和 ADB</string>
   <!-- NFC PreferenceCategory title -->
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">CyanogenMod 版本</string>
+  <string name="mod_version">OctOS 版本</string>
   <string name="mod_version_default">不明</string>
   <!-- About phone screen, Device model -->
   <!-- About phone screen, Device name -->
@@ -717,7 +717,7 @@
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">CyanogenMod 統計</string>
-  <string name="anonymous_statistics_summary">開啟匿名統計報告以便協助改進 CyanogenMod</string>
+  <string name="anonymous_statistics_summary">開啟匿名統計報告以便協助改進 OctOS</string>
   <string name="anonymous_statistics_warning_title">關於</string>
   <string name="enable_reporting_title">啟用報告</string>
   <string name="preview_data_title">預覽數據</string>

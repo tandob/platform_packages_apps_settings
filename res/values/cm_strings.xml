@@ -45,7 +45,7 @@
     <string name="nfc_title_category">NFC</string>
 
     <!-- About phone screen, CyanogenMod version -->
-    <string name="mod_version">OctOs version</string>
+    <string name="mod_version">OctOS version</string>
     <string name="mod_version_default">Unknown</string>
 
     <!-- About phone screen, Device model -->
@@ -825,7 +825,7 @@
 
     <!-- Privacy Settings Header item -->
     <string name="privacy_settings_cyanogenmod_title">Privacy</string>
-    <string name="privacy_settings_cyanogenmod_category" translatable="false">CyanogenMod</string>
+    <string name="privacy_settings_cyanogenmod_category" translatable="false">OctOS</string>
 
     <!-- Privacy Guard -->
     <string name="privacy_guard_default_title">Enabled by default</string>

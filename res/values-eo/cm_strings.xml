@@ -40,7 +40,7 @@
   <string name="root_access_all">Aplikaĵoj kaj ADB</string>
   <!-- NFC PreferenceCategory title -->
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Versio de CyanogenMod</string>
+  <string name="mod_version">Versio de OctOS</string>
   <string name="mod_version_default">Nekonata</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Modelo de la aparato</string>
@@ -51,7 +51,7 @@
   <!-- About phone screen, build date -->
   <string name="build_date">Dato de la eldono</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Ĝisdatigoj de CyanogenMod</string>
+  <string name="cmupdate_settings_title">Ĝisdatigoj de OctOS</string>
   <!-- Settings switch for updating Cyanogen recovery -->
   <string name="update_recovery_title">Ĝistadigi riparadon de Cyanogen</string>
   <string name="update_recovery_summary">Ĝistadigi riparadon de Cyanogen kun sistemaj ĝistadigadoj</string>
@@ -730,7 +730,7 @@
   <string name="no_filters_title">Neniu filtrilo ŝaltita</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Statistikoj pri CyanogenMod</string>
+  <string name="anonymous_statistics_title">Statistikoj pri OctOS</string>
   <string name="anonymous_statistics_summary">Ebligas plibonigi CyanogenMod, sendante anonimajn statisktikojn pri cimraportoj
 ,</string>
   <string name="anonymous_statistics_warning_title">Pri</string>
@@ -826,7 +826,7 @@
   <string name="interruptions_ignore_while_media_title">Malpermesi mallaŭtigadon</string>
   <string name="interruptions_ignore_while_media_summary">Ne mallaŭtigi aŭdvidan sonon, kiam atentigo alvenas</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Laŭleĝa informo pri CyanogenMod</string>
+  <string name="cmlicense_title">Laŭleĝa informo pri OctOS</string>
   <!-- Menu label for reset the battery stats -->
   <!-- Reset stats confirmation dialog's message -->
   <!-- Dock battery not present message -->

@@ -42,7 +42,7 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Версія CyanogenMod</string>
+  <string name="mod_version">Версія OctOS</string>
   <string name="mod_version_default">Невядома</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Мадэль прылады</string>
@@ -967,7 +967,7 @@
   <string name="interruptions_ignore_while_media_title">Не прыглушаць гук</string>
   <string name="interruptions_ignore_while_media_summary">Не змяншаць гучнасць прайгравання мультымедыя пры атрыманні паведамленняў</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Палітыка прыватнасці CyanogenMod</string>
+  <string name="cmlicense_title">Палітыка прыватнасці OctOS</string>
   <!-- Menu label for reset the battery stats -->
   <string name="menu_stats_reset">Скід статыстыкі</string>
   <!-- Reset stats confirmation dialog's message -->

@@ -37,19 +37,19 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Wersja CyanogenMod</string>
+  <string name="mod_version">Wersja OctOS</string>
   <string name="mod_version_default">Nieznana</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model urządzenia</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Nazwa urządzenia</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">Poziom API CyanogenMod</string>
+  <string name="mod_api_level">Poziom API OctOS</string>
   <string name="mod_api_level_default">Nieznana</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Data kompilacji</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Aktualizacje CyanogenMod</string>
+  <string name="cmupdate_settings_title">Aktualizacje OctOS</string>
   <!-- Settings switch for updating Cyanogen recovery -->
   <string name="update_recovery_title">Aktualizuj recovery Cyanogen</string>
   <string name="update_recovery_summary">Aktualizuj recovery wraz z aktualizacjami systemu</string>
@@ -834,7 +834,7 @@
   <string name="no_filters_title">Nie wybrano filtrów</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Statystyki CyanogenMod</string>
+  <string name="anonymous_statistics_title">Statystyki OctOS</string>
   <string name="anonymous_statistics_summary">Pomóż ulepszyć CyanogenMod, pozwalając na wysyłanie anonimowych statystyk</string>
   <string name="anonymous_statistics_warning_title">O...</string>
   <string name="anonymous_statistics_warning">Wyrażenie zgody na udział w Statystykach CyanogenMod zezwoli na przesył anonimowych danych do
@@ -980,7 +980,7 @@
   <string name="interruptions_ignore_while_media_title">Zapobiegaj przerywaniu dźwięku</string>
   <string name="interruptions_ignore_while_media_summary">Nie zmniejszaj głośności odtwarzanych mediów, po odebraniu powiadomienia</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Informacje prawne CyanogenMod</string>
+  <string name="cmlicense_title">Informacje prawne OctOS</string>
   <!-- Menu label for reset the battery stats -->
   <string name="menu_stats_reset">Resetuj statystyki</string>
   <!-- Reset stats confirmation dialog's message -->

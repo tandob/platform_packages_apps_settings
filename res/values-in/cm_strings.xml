@@ -39,7 +39,7 @@
   <string name="root_access_all">Aplikasi dan ADB</string>
   <!-- NFC PreferenceCategory title -->
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Versi CyanogenMod</string>
+  <string name="mod_version">Versi OctOS</string>
   <string name="mod_version_default">Tidak diketahui</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model perangkat</string>
@@ -50,7 +50,7 @@
   <!-- About phone screen, build date -->
   <string name="build_date">Tanggal pembuatan</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Pembaruan CyanogenMod</string>
+  <string name="cmupdate_settings_title">Pembaruan OctOS</string>
   <!-- Settings switch for updating Cyanogen recovery -->
   <string name="update_recovery_title">Perbarui recovery Cyanogen</string>
   <string name="update_recovery_summary">Perbarui recovery dengan pembaruan sistem</string>
@@ -738,7 +738,7 @@
   <string name="no_filters_title">Belum ada penyaring</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Statistik CyanogenMod</string>
+  <string name="anonymous_statistics_title">Statistik OctOS</string>
   <string name="anonymous_statistics_summary">Bantu CyanogenMod untuk menjadi lebih baik dengan berperan serta melaporkan statistik anonim</string>
   <string name="anonymous_statistics_warning_title">Tentang</string>
   <string name="anonymous_statistics_warning">Berperan serta dalam Statistik CyanogenMod akan memungkinkan data non-pribadi dikirimkan kepada para pengembang CyanogenMod untuk melacak instalasi unik di perangkat. Informasi yang dikirimkan berisi pengenal unik, yang tidak membahayakan privasi atau data pribadi Anda. Data dikirim setiap kali perangkat dimulai.\n\nUntuk melihat contoh data yang akan dikirim, ketuk Pratinjau Data.</string>
@@ -833,7 +833,7 @@
   <string name="interruptions_ignore_while_media_title">Cegah penurunan suara</string>
   <string name="interruptions_ignore_while_media_summary">Tidak mengurangi volume media pemutar ketika datang pemberitahuan</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Hukum CyanogenMod</string>
+  <string name="cmlicense_title">Hukum OctOS</string>
   <!-- Menu label for reset the battery stats -->
   <string name="menu_stats_reset">Set ulang statistik</string>
   <!-- Reset stats confirmation dialog's message -->

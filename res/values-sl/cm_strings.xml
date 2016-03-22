@@ -43,19 +43,19 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Različica CyanogenMod</string>
+  <string name="mod_version">Različica OctOS</string>
   <string name="mod_version_default">Neznano</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model naprave</string>
   <!-- About phone screen, Device name -->
   <string name="device_name">Ime naprave</string>
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">Raven API-ja CyanogenMod</string>
+  <string name="mod_api_level">Raven API-ja OctOS</string>
   <string name="mod_api_level_default">Neznano</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Datum izgradnje</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Posodobitve CyanogenMod</string>
+  <string name="cmupdate_settings_title">Posodobitve OctOS</string>
   <!-- Settings switch for updating Cyanogen recovery -->
   <string name="update_recovery_title">Posodobi obnovitev Cyanogen</string>
   <string name="update_recovery_summary">Posodobi obnovitev s sistemskimi posodobitvami</string>
@@ -840,7 +840,7 @@
   <string name="no_filters_title">Ni nastavljenih filtrov</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Statistika CyanogenMod</string>
+  <string name="anonymous_statistics_title">Statistika OctOS</string>
   <string name="anonymous_statistics_summary">Pomagajte izboljšati CyanogenMod tako, da izberete pošiljanje anonimne statistike</string>
   <string name="anonymous_statistics_warning_title">O programu</string>
   <string name="anonymous_statistics_warning">Izbira statistike CyanogenMod bo dovolila pošiljanje neosebnih podatkov
@@ -986,7 +986,7 @@
   <string name="interruptions_ignore_while_media_title">Prepreči zvočno izognitev</string>
   <string name="interruptions_ignore_while_media_summary">Ne zmanjšaj glasnosti predvajanja predstavnosti, ko prispe obvestilo</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Pravna obvestila CyanogenMod</string>
+  <string name="cmlicense_title">Pravna obvestila OctOS</string>
   <!-- Menu label for reset the battery stats -->
   <string name="menu_stats_reset">Ponastavi statistiko</string>
   <!-- Reset stats confirmation dialog's message -->

@@ -41,7 +41,7 @@
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">versiune CyanogenMod</string>
+  <string name="mod_version">versiune OctOS</string>
   <string name="mod_version_default">Necunoscut</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Modelul dispozitivului</string>
@@ -52,7 +52,7 @@
   <!-- About phone screen, build date -->
   <string name="build_date">Dată compilare</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Actualizări CyanogenMod</string>
+  <string name="cmupdate_settings_title">Actualizări OctOS</string>
   <!-- Settings switch for updating Cyanogen recovery -->
   <string name="update_recovery_title">Actualizează Cyanogen recovery</string>
   <!-- Themes Settings -->
@@ -783,7 +783,7 @@
   <string name="no_filters_title">Niciun filtru setat</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">Statistici CyanogenMod</string>
+  <string name="anonymous_statistics_title">Statistici OctOS</string>
   <string name="anonymous_statistics_summary">Ajută-ne să facem CyanogenMod mai bun prin trimiterea de rapoarte anonime cu statistici</string>
   <string name="anonymous_statistics_warning_title">Despre</string>
   <string name="anonymous_statistics_warning">Optând să trimiteți Statistici CyanogenMod, se permite dezvoltatorilor CyanogenMod să primească date ne-personale pentru a urmări instalările unice la o gama mare de dispozitive. Informația transmisă include un identificator unic, care nu vă compromite intimitatea sau datele personale. Datele sunt trimise la fiecare pornire a dispozitivului.\n\nPentru a vedea un exemplu de date ce se trimit, apăsați pe Previzualizare Date.</string>
@@ -903,7 +903,7 @@
   <string name="live_lock_screen_settings_button">Setări</string>
   <!-- Live lock screen settings screen, caption for when live lock screens are disabled -->
   <!-- CM Legal -->
-  <string name="cmlicense_title">Juridic CyanogenMod</string>
+  <string name="cmlicense_title">Juridic OctOS</string>
   <!-- Menu label for reset the battery stats -->
   <string name="menu_stats_reset">Resetare statistici</string>
   <!-- Reset stats confirmation dialog's message -->

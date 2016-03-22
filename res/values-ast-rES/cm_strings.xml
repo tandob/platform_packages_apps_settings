@@ -40,7 +40,7 @@
   <string name="root_access_all">Aplicaciones y ADB</string>
   <!-- NFC PreferenceCategory title -->
   <!-- About phone screen, CyanogenMod version -->
-  <string name="mod_version">Versión CyanogenMod</string>
+  <string name="mod_version">Versión OctOS</string>
   <string name="mod_version_default">Desconocida</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Modelu de preséu</string>
@@ -51,7 +51,7 @@
   <!-- About phone screen, build date -->
   <string name="build_date">Data de compilación</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Anovamientos CyanogenMod</string>
+  <string name="cmupdate_settings_title">Anovamientos OctOS</string>
   <!-- Settings switch for updating Cyanogen recovery -->
   <string name="update_recovery_title">Anovar col recovery de Cyanogen</string>
   <string name="update_recovery_summary">Anovar recovery colos anovamientos del sistema</string>
@@ -755,7 +755,7 @@ Calca pa empareyar el preséu Bluetooth enantes de configurar los disparadores.<
   <!-- Live lock screen settings screen, caption for when live lock screens are disabled -->
   <string name="interruptions_ignore_while_media_summary">Nun amenorga\'l volume de reproducción cuando aporten avisos</string>
   <!-- CM Legal -->
-  <string name="cmlicense_title">Llicencia CyanogenMod</string>
+  <string name="cmlicense_title">Llicencia OctOS</string>
   <!-- Menu label for reset the battery stats -->
   <!-- Reset stats confirmation dialog's message -->
   <!-- Dock battery not present message -->

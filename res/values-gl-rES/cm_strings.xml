@@ -41,10 +41,10 @@
   <!-- About phone screen, Device model -->
   <!-- About phone screen, Device name -->
   <!-- About phone screen, CyanogenMod Api Level -->
-  <string name="mod_api_level">Nivel API CyanogenMod</string>
+  <string name="mod_api_level">Nivel API OctOS</string>
   <!-- About phone screen, build date -->
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Actualizacións de CyanogenMod</string>
+  <string name="cmupdate_settings_title">Actualizacións de OctOS</string>
   <!-- Settings switch for updating Cyanogen recovery -->
   <string name="update_recovery_title">Recuperación da actualización de Cyanogen</string>
   <string name="update_recovery_summary">Actualizar a recuperación coas actualizacións do sistema</string>
