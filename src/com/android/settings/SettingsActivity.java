@@ -83,6 +83,8 @@ import com.android.settings.blacklist.BlacklistSettings;
 import com.android.settings.bluetooth.BluetoothSettings;
 import com.android.settings.contributors.ContributorsCloudFragment;
 import com.android.settings.cyanogenmod.DisplayRotation;
+import com.android.settings.cyanogenmod.LiveLockScreenSettings;
+import com.android.settings.cyanogenmod.WeatherServiceSettings;
 import com.android.settings.dashboard.DashboardCategory;
 import com.android.settings.dashboard.DashboardSummary;
 import com.android.settings.dashboard.DashboardTile;
@@ -137,6 +139,7 @@ import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.octos.OctosSettings;
 
+import cyanogenmod.app.CMContextConstants;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -378,6 +381,8 @@ public class SettingsActivity extends Activity
             ProfilesSettings.class.getName(),
             ContributorsCloudFragment.class.getName(),
             NotificationManagerSettings.class.getName(),
+            LiveLockScreenSettings.class.getName(),
+            WeatherServiceSettings.class.getName(),
             OctosSettings.class.getName()
     };
 
@@ -1327,6 +1332,11 @@ public class SettingsActivity extends Activity
                     boolean hasDeviceKeys = getResources().getInteger(
                             com.android.internal.R.integer.config_deviceHardwareKeys) != 0;
                     if (!hasDeviceKeys) {
+                        removeTile = true;
+                    }
+                } else if (id == R.id.weather_settings) {
+                    if (!getPackageManager().hasSystemFeature(
+                            CMContextConstants.Features.WEATHER_SERVICES)) {
                         removeTile = true;
                     }
                 }
