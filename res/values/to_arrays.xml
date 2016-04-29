@@ -2,30 +2,6 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-<!-- LS Weather -->
-    <string-array name="weather_condition_icon_entries">
-        <item>@string/weather_condition_icon_monochrome_title</item>
-        <item>@string/weather_condition_icon_colored_title</item>
-        <item>@string/weather_condition_icon_vclouds_title</item>
-    </string-array>
-
-    <string-array name="weather_condition_icon_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
-    <string-array name="weather_hide_panel_entries">
-        <item>@string/weather_hide_panel_auto_title</item>
-        <item>@string/weather_hide_panel_custom_title</item>
-        <item>@string/weather_hide_panel_never_title</item>
-    </string-array>
-
-    <string-array name="weather_hide_panel_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
     <!-- Gesture Anywhere -->
     <string-array name="gesture_anywhere_position_entries" translatable="false">
         <item>@string/gesture_anywhere_position_left</item>
