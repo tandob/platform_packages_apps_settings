@@ -7054,4 +7054,7 @@
 
     <!-- Toast message letting the user know the color temperature setting is not immediate -->
     <string name="color_temperature_toast">To apply color change, turn off screen</string>
+    
+    <!-- Smart Cover settings -->
+    <string name="smart_cover_settings">Smart Cover</string>
 </resources>
